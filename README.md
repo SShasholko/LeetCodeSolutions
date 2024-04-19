@@ -1,5 +1,5 @@
 
-# Leet_code_solutions
+# Leet code solutions
 
 Welcome to my repository of solutions for LeetCode problems! Below you'll find a collection of my solutions to various coding challenges on [LeetCode](https://leetcode.com/). Feel free to explore, learn, and provide feedback.
 
