@@ -15,9 +15,9 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 
 ## Solutions
 
-- [367. Valid Perfect Square](#367-valid-perfect-square)
+- [367. Valid Perfect Square(JS)](#367-valid-perfect-square)
 
-### 367. Valid Perfect Square
+### 367. Valid Perfect Square(JS)
 Difficulty: Easy
 ```bash
   var isPerfectSquare = function(num) {
