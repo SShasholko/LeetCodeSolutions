@@ -15,8 +15,8 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 
 ## Solutions
 
-- [136. Single Number (JS)](#136-Single-Number)
-- [367. Valid Perfect Square (JS)](#367-valid-perfect-square)
+- [136. Single Number (JS)](#136-single-number-js)
+- [367. Valid Perfect Square (JS)](#367-valid-perfect-square-js)
 
 ### 136. Single Number (JS)
 Difficulty: Easy
