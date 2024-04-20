@@ -16,6 +16,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 ## Solutions
 
 - [136. Single Number (JS)](#136-single-number-js)
+- [268. Missing Number (JS)](#268-missing-number-js)
 - [367. Valid Perfect Square (JS)](#367-valid-perfect-square-js)
 
 ### 136. Single Number (JS)
@@ -29,6 +30,19 @@ var singleNumber = function(nums) {
       } 
         if(numsNew[i]!=numsNew[i+1]){
         return numsNew[i]
+      }
+    }  
+};
+```
+
+### 268. Missing Number (JS)
+Difficulty: Easy
+```bash
+var missingNumber = function(nums) {
+    nums.sort((a, b) => a - b);
+    for(let i=0;i<=nums.length;i++){
+        if(nums[i]!=i){
+        return i
       }
     }  
 };
