@@ -18,6 +18,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - [136. Single Number (JS)](#136-single-number-js)
 - [268. Missing Number (JS)](#268-missing-number-js)
 - [367. Valid Perfect Square (JS)](#367-valid-perfect-square-js)
+- [3110. Score of a String (JS)](#3110-score-of-a-string-js)
 
 ### 136. Single Number (JS)
 Difficulty: Easy
@@ -63,4 +64,20 @@ Difficulty: Easy
 };
 ```
 
+### 3110. Score of a String (JS)
+Difficulty: Easy
+```bash
+var scoreOfString = function(s) {
+      let sum = 0;
+  for(let i=0;i<s.length-1;i++){
+    if((s[i+1].charCodeAt(0)-s[i].charCodeAt(0))<0){
+        sum+=(s[i+1].charCodeAt(0)-s[i].charCodeAt(0))*(-1)
+    }
+    else{
+        sum+=s[i+1].charCodeAt(0)-s[i].charCodeAt(0)
+    }
+  }
+  return sum
+};
+```
 
