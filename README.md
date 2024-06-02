@@ -17,6 +17,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 
 - [136. Single Number (JS)](#136-single-number-js)
 - [268. Missing Number (JS)](#268-missing-number-js)
+- [344. Reverse String (JS)](#344-reverse-string-js)
 - [367. Valid Perfect Square (JS)](#367-valid-perfect-square-js)
 - [3110. Score of a String (JS)](#3110-score-of-a-string-js)
 
@@ -46,6 +47,21 @@ var missingNumber = function(nums) {
         return i
       }
     }  
+};
+```
+
+### 344. Reverse String (JS)
+Difficulty: Easy
+```bash
+var reverseString = function(s) {
+    let elem1;
+    let elem2;
+    for(let i = 0;i<s.length/2;i++){
+      elem1 = s[i]
+      elem2 = s[s.length-1-i]
+      s[i] = elem2;
+      s[s.length-i-1] = elem1
+    }
 };
 ```
 
