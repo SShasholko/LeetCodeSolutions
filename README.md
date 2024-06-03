@@ -16,6 +16,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 ## Solutions
 
 - [136. Single Number (JS)](#136-single-number-js)
+- [169. Majority Element (JS)](#169-majority-element-js)
 - [268. Missing Number (JS)](#268-missing-number-js)
 - [344. Reverse String (JS)](#344-reverse-string-js)
 - [367. Valid Perfect Square (JS)](#367-valid-perfect-square-js)
@@ -34,6 +35,18 @@ var singleNumber = function(nums) {
         return numsNew[i]
       }
     }  
+};
+```
+
+### 169. Majority Element (JS)
+Difficulty: Easy
+```bash
+var majorityElement = function(nums) {
+    if(nums.length>1){
+nums.sort((a,b)=>a-b)
+let num = Math.floor(nums.length/2)
+return nums[num]}
+    else return nums[0]
 };
 ```
 
