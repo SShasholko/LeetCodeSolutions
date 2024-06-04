@@ -20,6 +20,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - [268. Missing Number (JS)](#268-missing-number-js)
 - [344. Reverse String (JS)](#344-reverse-string-js)
 - [367. Valid Perfect Square (JS)](#367-valid-perfect-square-js)
+- [605. Can Place Flowers (JS)](#605-can-place-flowers-js)
 - [3110. Score of a String (JS)](#3110-score-of-a-string-js)
 
 ### 136. Single Number (JS)
@@ -90,6 +91,31 @@ Difficulty: Easy
         if(i*i>num){ return false }
         if(i*i===num){ return true }
     }
+};
+```
+
+### 605. Can Place Flowers (JS)
+Difficulty: Easy
+```bash
+var canPlaceFlowers = function(flowerbed, n) {
+let freePots = 0;
+if(flowerbed.length==1){
+          if(n==1&&flowerbed[0]==0||n==0&&flowerbed[0]==1||n==0&&flowerbed[0]==0) return true
+          else return false} 
+if(flowerbed.length==2){
+          if((n==1&&flowerbed[0]==0&&flowerbed[1]==0)||n==0) return true
+          else return false } 
+if(flowerbed[0]==0&&flowerbed[1]==0) freePots++; 
+if(flowerbed[flowerbed.length-1]==0&&flowerbed[flowerbed.length-2]==0)  freePots++;
+
+for(let i=2;i<=flowerbed.length-3;i++){
+    if(flowerbed[i]==0&&flowerbed[i-1]==0&&flowerbed[i+1]==0){
+      freePots++;
+      i+=1
+    }
+  }
+if(freePots>=n) return true
+else return false
 };
 ```
 
