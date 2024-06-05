@@ -21,6 +21,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - [344. Reverse String (JS)](#344-reverse-string-js)
 - [367. Valid Perfect Square (JS)](#367-valid-perfect-square-js)
 - [605. Can Place Flowers (JS)](#605-can-place-flowers-js)
+- [1002. Find Common Characters (JS)](#1002-find-common-characters-js)
 - [3110. Score of a String (JS)](#3110-score-of-a-string-js)
 
 ### 136. Single Number (JS)
@@ -116,6 +117,30 @@ for(let i=2;i<=flowerbed.length-3;i++){
   }
 if(freePots>=n) return true
 else return false
+};
+```
+
+### 1002. Find Common Characters (JS)
+Difficulty: Easy
+```bash
+const res = []
+    let count = 0
+    let newW
+    for(let i=0;i<words[0].length;i++){   
+      for(let j=1;j<words.length;j++){
+          if(words[j].match(words[0][i]))
+          {
+           newW = words[j].replace(words[0][i],"")
+           words[j] = newW
+            count++
+          }
+      }
+      if(count==words.length-1){
+        res.push(words[0][i])
+      }
+      count = 0
+    }
+    return res
 };
 ```
 
