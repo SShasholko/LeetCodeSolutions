@@ -17,6 +17,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 
 - [136. Single Number (JS)](#136-single-number-js)
 - [169. Majority Element (JS)](#169-majority-element-js)
+- [228. Summary Ranges (JS)](#228-summary-ranges-js)
 - [268. Missing Number (JS)](#268-missing-number-js)
 - [344. Reverse String (JS)](#344-reverse-string-js)
 - [367. Valid Perfect Square (JS)](#367-valid-perfect-square-js)
@@ -50,6 +51,33 @@ let num = Math.floor(nums.length/2)
 return nums[num]}
     else return nums[0]
 };
+```
+
+### 228. Summary Ranges (JS)
+Difficulty: Easy
+```bash
+let line = ''
+    const newAr = []
+    for(let i=0;i<nums.length;i++){
+                if(nums[i+1]!=nums[i]+1){
+        line = line + nums[i]
+        newAr.push(line)
+        }
+        if(nums[i+1]==nums[i]+1){
+            line=nums[i] + '->'
+            for(let j=i;j<nums.length;j++){
+                if(nums[j+1]!=nums[j]+1)
+                {
+                    line+=nums[j]
+                    newAr.push(line)
+                    i=j
+                    break
+                }
+            }
+        }
+        line=''
+    }
+    return newAr
 ```
 
 ### 268. Missing Number (JS)
