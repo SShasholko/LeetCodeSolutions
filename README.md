@@ -29,6 +29,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 
 ### 35. Search Insert Position (JS)
 Difficulty: Easy
+```bash
 var searchInsert = function(nums, target) {
     let i=0
     for(;nums[i]<=target;i++){
@@ -38,7 +39,7 @@ var searchInsert = function(nums, target) {
     }
      return i
 };
-
+```
 
 ### 136. Single Number (JS)
 Difficulty: Easy
