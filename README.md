@@ -15,6 +15,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 
 ## Solutions
 
+- [35. Search Insert Position (JS)](#35-search-insert-position-js)
 - [136. Single Number (JS)](#136-single-number-js)
 - [169. Majority Element (JS)](#169-majority-element-js)
 - [228. Summary Ranges (JS)](#228-summary-ranges-js)
@@ -24,6 +25,20 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - [605. Can Place Flowers (JS)](#605-can-place-flowers-js)
 - [1002. Find Common Characters (JS)](#1002-find-common-characters-js)
 - [3110. Score of a String (JS)](#3110-score-of-a-string-js)
+
+
+### 35. Search Insert Position (JS)
+Difficulty: Easy
+var searchInsert = function(nums, target) {
+    let i=0
+    for(;nums[i]<=target;i++){
+      if (nums[i]==target){
+        return i
+      }
+    }
+     return i
+};
+
 
 ### 136. Single Number (JS)
 Difficulty: Easy
