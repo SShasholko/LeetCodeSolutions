@@ -40,6 +40,36 @@ var searchInsert = function(nums, target) {
      return i
 };
 ```
+Binary search
+```bash
+var searchInsert = function(nums, target) {
+    let low = 0
+    let high = nums.length-1
+    let mid;
+    if(target<nums[0]){
+         return 0
+    }
+    if(target>nums[nums.length-1]){
+         return nums.length
+    }
+    while(low<=high){
+      mid = Math.ceil((low+high)/2)
+      if(nums[mid]==target){
+        return mid
+      }
+      if(nums[mid]>target){
+        high=mid-1
+      }
+      if(nums[mid]<target){
+        low = mid+1
+      }
+    }
+if(nums[mid]>target){
+    return mid
+} else
+    return mid+1
+};
+```
 
 ### 136. Single Number (JS)
 Difficulty: Easy
