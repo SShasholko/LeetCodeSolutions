@@ -222,11 +222,13 @@ const res = []
 ### 1154. Day of the Year (JS)
 Difficulty: Easy
 ```bash
-let year = date.substr(0,4);
-let day1 = new Date(date)
-let day0 = new Date(year + '-01-01')
-let days = (day1-day0)/1000/60/60/24;
-return days+1
+var dayOfYear = function(date) {
+    let year = date.substr(0,4);
+    let day1 = new Date(date)
+    let day0 = new Date(year + '-01-01')
+    let days = (day1-day0)/1000/60/60/24;
+    return days+1
+};
 ```
 
 ### 3110. Score of a String (JS)
