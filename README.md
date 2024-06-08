@@ -24,6 +24,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - [367. Valid Perfect Square (JS)](#367-valid-perfect-square-js)
 - [605. Can Place Flowers (JS)](#605-can-place-flowers-js)
 - [1002. Find Common Characters (JS)](#1002-find-common-characters-js)
+- [1154. Day of the Year (JS)](#1154-day-of-the-year-js)
 - [3110. Score of a String (JS)](#3110-score-of-a-string-js)
 
 
@@ -216,6 +217,16 @@ const res = []
     }
     return res
 };
+```
+
+### 1154. Day of the Year (JS)
+Difficulty: Easy
+```bash
+let year = date.substr(0,4);
+let day1 = new Date(date)
+let day0 = new Date(year + '-01-01')
+let days = (day1-day0)/1000/60/60/24;
+return days+1
 ```
 
 ### 3110. Score of a String (JS)
