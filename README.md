@@ -20,6 +20,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - [169. Majority Element (JS)](#169-majority-element-js)
 - [228. Summary Ranges (JS)](#228-summary-ranges-js)
 - [268. Missing Number (JS)](#268-missing-number-js)
+- [342. Power of Four (JS)](#342-power-of-four-js)
 - [344. Reverse String (JS)](#344-reverse-string-js)
 - [367. Valid Perfect Square (JS)](#367-valid-perfect-square-js)
 - [605. Can Place Flowers (JS)](#605-can-place-flowers-js)
@@ -137,6 +138,21 @@ var missingNumber = function(nums) {
         return i
       }
     }  
+};
+```
+
+### 342. Power of Four (JS)
+Difficulty: Easy
+```bash
+var isPowerOfFour = function(n) {
+    if(n==1) return true
+    if(n%4==0){
+      if(Number.isInteger(Math.log2(n)/Math.log2(4)))
+        return true
+      else
+       return false
+    }
+    else return false
 };
 ```
 
