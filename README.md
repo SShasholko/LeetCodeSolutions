@@ -25,6 +25,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - [367. Valid Perfect Square (JS)](#367-valid-perfect-square-js)
 - [605. Can Place Flowers (JS)](#605-can-place-flowers-js)
 - [1002. Find Common Characters (JS)](#1002-find-common-characters-js)
+- [1122. Relative Sort Array (JS)](#1122-relative-sort-array-js)
 - [1154. Day of the Year (JS)](#1154-day-of-the-year-js)
 - [3110. Score of a String (JS)](#3110-score-of-a-string-js)
 
@@ -234,6 +235,31 @@ const res = []
     return res
 };
 ```
+
+### 1122. Relative Sort Array (JS)
+Difficulty: Easy
+```bash
+var relativeSortArray = function(arr1, arr2) {
+        const newArray = []
+    for(let i=0;i<arr2.length;i++){
+        let elem = arr2[i]
+        
+        for(let j=0;j<arr1.length;j++){
+            if(arr1[j]==elem){
+                newArray.push(elem)
+                arr1.splice(j,1)
+                j--
+            }
+        }
+    }
+    arr1.sort((a,b)=>a-b)
+    for(let i=0;i<arr1.length;i++){
+        newArray.push(arr1[i])
+    }
+    return newArray
+};
+```
+
 
 ### 1154. Day of the Year (JS)
 Difficulty: Easy
