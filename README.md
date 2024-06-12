@@ -16,7 +16,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 ## Solutions
 
 - [35. Search Insert Position (JS)](#35-search-insert-position-js)
-- [75. Sort Colors (JS)](#75-sort-colors--js-)
+- [75. Sort Colors (JS)](#75-sort-colors-js)
 - [136. Single Number (JS)](#136-single-number-js)
 - [169. Majority Element (JS)](#169-majority-element-js)
 - [228. Summary Ranges (JS)](#228-summary-ranges-js)
