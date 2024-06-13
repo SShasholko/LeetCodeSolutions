@@ -20,6 +20,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - [136. Single Number (JS)](#136-single-number-js)
 - [169. Majority Element (JS)](#169-majority-element-js)
 - [228. Summary Ranges (JS)](#228-summary-ranges-js)
+- [231. Power of Two (JS)](#231-power-of-two-js)
 - [268. Missing Number (JS)](#268-missing-number-js)
 - [342. Power of Four (JS)](#342-power-of-four-js)
 - [344. Reverse String (JS)](#344-reverse-string-js)
@@ -147,6 +148,21 @@ let line = ''
         line=''
     }
     return newAr
+```
+
+### 231. Power of Two (JS)
+Difficulty: Easy
+```bash
+var isPowerOfTwo = function(n) {
+    if(n==1) return true
+        if(n%2==0){
+       if(Number.isInteger(Math.log2(n))){
+         return true
+       }
+       else return false
+    }
+    else return false 
+};
 ```
 
 ### 268. Missing Number (JS)
