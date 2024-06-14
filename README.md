@@ -26,6 +26,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - [344. Reverse String (JS)](#344-reverse-string-js)
 - [367. Valid Perfect Square (JS)](#367-valid-perfect-square-js)
 - [605. Can Place Flowers (JS)](#605-can-place-flowers-js)
+- [945. Minimum Increment to Make Array Unique (JS)](#945-minimum-increment-to-make-array-unique-js)
 - [1002. Find Common Characters (JS)](#1002-find-common-characters-js)
 - [1122. Relative Sort Array (JS)](#1122-relative-sort-array-js)
 - [1154. Day of the Year (JS)](#1154-day-of-the-year-js)
@@ -245,6 +246,25 @@ for(let i=2;i<=flowerbed.length-3;i++){
   }
 if(freePots>=n) return true
 else return false
+};
+```
+
+### 945. Minimum Increment to Make Array Unique (JS)
+Difficulty: Medium
+```bash
+var minIncrementForUnique = function(nums) {
+    nums.sort((a,b)=>a-b)
+    let count = 0
+    for(let i=1;i<nums.length;i++)
+    {
+      if(nums[i]<=nums[i-1]){
+        while(nums[i]<=nums[i-1]){
+          nums[i]++
+          count++;
+        }
+      }
+    }
+    return count
 };
 ```
 
