@@ -30,6 +30,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - [1002. Find Common Characters (JS)](#1002-find-common-characters-js)
 - [1122. Relative Sort Array (JS)](#1122-relative-sort-array-js)
 - [1154. Day of the Year (JS)](#1154-day-of-the-year-js)
+- [2974. Minimum Number Game (JS)](#2974-minimum-number-game-js)
 - [3110. Score of a String (JS)](#3110-score-of-a-string-js)
 
 
@@ -326,6 +327,20 @@ var dayOfYear = function(date) {
     let day0 = new Date(year + '-01-01')
     let days = (day1-day0)/1000/60/60/24;
     return days+1
+};
+```
+
+### 2974. Minimum Number Game (JS)
+Difficulty: Easy
+```bash
+var numberGame = function(nums) {
+        nums.sort((a,b)=>a-b)
+    const resArray = []
+    for(let i=0;i<nums.length;i=i+2){
+      resArray.push(nums[i+1])
+      resArray.push(nums[i])
+    }
+   return resArray
 };
 ```
 
