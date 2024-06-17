@@ -22,6 +22,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - [228. Summary Ranges (JS)](#228-summary-ranges-js)
 - [231. Power of Two (JS)](#231-power-of-two-js)
 - [268. Missing Number (JS)](#268-missing-number-js)
+- [283. Move Zeroes (JS)](#283-move-zeroes-js)
 - [342. Power of Four (JS)](#342-power-of-four-js)
 - [344. Reverse String (JS)](#344-reverse-string-js)
 - [367. Valid Perfect Square (JS)](#367-valid-perfect-square-js)
@@ -178,6 +179,24 @@ var missingNumber = function(nums) {
         return i
       }
     }  
+};
+```
+
+### 283. Move Zeroes (JS)
+Difficulty: Easy
+```bash
+var moveZeroes = function(nums) {
+    for(let i=0;i<nums.length;i++){
+      if(nums[i]==0){
+        for(let j=i;j<nums.length;j++){
+          if(nums[j]!=0){
+          nums[i]=nums[j]
+          nums[j]=0
+          break
+          }
+        }
+      }
+    }
 };
 ```
 
