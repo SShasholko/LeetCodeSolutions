@@ -17,6 +17,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 
 - [35. Search Insert Position (JS)](#35-search-insert-position-js)
 - [75. Sort Colors (JS)](#75-sort-colors-js)
+- [58. Length of Last Word (JS)](#58-length-of-last-word-js)
 - [136. Single Number (JS)](#136-single-number-js)
 - [169. Majority Element (JS)](#169-majority-element-js)
 - [228. Summary Ranges (JS)](#228-summary-ranges-js)
@@ -77,6 +78,19 @@ if(nums[mid]>target){
     return mid
 } else
     return mid+1
+};
+```
+
+### 58. Length of Last Word (JS)
+Difficulty: Easy
+```bash
+var lengthOfLastWord = function(s) {
+        const arFromStr = s.split(' ')
+    for(let i = arFromStr.length-1;i>=0;i--){
+        if(arFromStr[i]!=''){
+          return arFromStr[i].length
+        }
+    }
 };
 ```
 
