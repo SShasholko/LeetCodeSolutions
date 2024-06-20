@@ -36,6 +36,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - [1154. Day of the Year (JS)](#1154-day-of-the-year-js)
 - [2974. Minimum Number Game (JS)](#2974-minimum-number-game-js)
 - [3110. Score of a String (JS)](#3110-score-of-a-string-js)
+- [3174. Clear Digits (JS)](#3174-clear-digits-js)
 
 
 ### 35. Search Insert Position (JS)
@@ -439,3 +440,16 @@ var scoreOfString = function(s) {
 };
 ```
 
+### 3174. Clear Digits (JS)
+Difficulty: Easy
+```bash
+var clearDigits = function(s) {
+      for(let i=0;i<s.length;i++){
+    if(s[i]=='0'||s[i]=='1'||s[i]=='2'||s[i]=='3'||s[i]=='4'||s[i]=='5'||s[i]=='6'||s[i]=='7'||s[i]=='8'||s[i]=='9'){
+        s = s.slice(0,i-1) + s.slice(i+1,s.length)
+        i=0
+    }
+  }
+    return s
+};
+```
