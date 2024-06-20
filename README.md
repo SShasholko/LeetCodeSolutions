@@ -18,6 +18,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - [35. Search Insert Position (JS)](#35-search-insert-position-js)
 - [75. Sort Colors (JS)](#75-sort-colors-js)
 - [58. Length of Last Word (JS)](#58-length-of-last-word-js)
+- [66. Plus One (JS)](#66-plus-one-js)
 - [136. Single Number (JS)](#136-single-number-js)
 - [169. Majority Element (JS)](#169-majority-element-js)
 - [228. Summary Ranges (JS)](#228-summary-ranges-js)
@@ -91,6 +92,27 @@ var lengthOfLastWord = function(s) {
           return arFromStr[i].length
         }
     }
+};
+```
+
+### 66. Plus One (JS)
+Difficulty: Easy
+```bash
+var plusOne = function(digits) {
+    if(digits[digits.length - 1]<9)
+    {
+        digits[digits.length - 1] = digits[digits.length - 1] + 1
+        return digits
+    }
+    else{
+        let i = digits.length - 1
+            for(;digits[i]==9;i--){
+            digits[i]=0
+        }
+      if(i!=-1) digits[i]+=1
+      if(i==-1) digits.unshift(1)      
+    }
+    return digits
 };
 ```
 
