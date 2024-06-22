@@ -16,9 +16,10 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 ## Solutions
 
 - [35. Search Insert Position (JS)](#35-search-insert-position-js)
-- [75. Sort Colors (JS)](#75-sort-colors-js)
 - [58. Length of Last Word (JS)](#58-length-of-last-word-js)
 - [66. Plus One (JS)](#66-plus-one-js)
+- [75. Sort Colors (JS)](#75-sort-colors-js)
+- [88. Merge Sorted Array (JS)](#88-merge-sorted-array-js)
 - [136. Single Number (JS)](#136-single-number-js)
 - [169. Majority Element (JS)](#169-majority-element-js)
 - [228. Summary Ranges (JS)](#228-summary-ranges-js)
@@ -133,6 +134,19 @@ var sortColors = function(nums) {
         }
       }
     }
+};
+```
+
+### 88. Merge Sorted Array (JS)
+Difficulty: Easy
+```bash
+var merge = function(nums1, m, nums2, n) {
+      let j=0
+    for(let i = m;i<nums1.length;i++){
+      nums1[i] = nums2[j]
+      j++
+    }
+    nums1.sort((a,b)=>a-b)
 };
 ```
 
