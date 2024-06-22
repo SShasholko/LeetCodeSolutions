@@ -14,7 +14,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 
 
 ## Solutions
-
+- [27. Remove Element (JS)](#27-remove-element-js)
 - [35. Search Insert Position (JS)](#35-search-insert-position-js)
 - [58. Length of Last Word (JS)](#58-length-of-last-word-js)
 - [66. Plus One (JS)](#66-plus-one-js)
@@ -39,6 +39,20 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - [3110. Score of a String (JS)](#3110-score-of-a-string-js)
 - [3174. Clear Digits (JS)](#3174-clear-digits-js)
 
+
+### 27. Remove Element (JS)
+Difficulty: Easy
+```bash
+var removeElement = function(nums, val) {
+        for(let i=0;i<nums.length;i++){
+      if(nums[i]==val){
+        nums.splice(i,1)
+        i--
+      }
+    }
+   return nums.length
+};
+```
 
 ### 35. Search Insert Position (JS)
 Difficulty: Easy
