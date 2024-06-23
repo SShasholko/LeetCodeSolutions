@@ -10,8 +10,9 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 ## About LeetCode
 
 [LeetCode](https://leetcode.com/) is a platform where you can practice coding skills and prepare for technical interviews. It offers a vast array of coding problems across different difficulty levels and categories such as algorithms, data structures, and more.
-
-
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) `Easy`
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) `Medium`
+- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `Hard`
 
 ## Solutions
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [27. Remove Element (JS)](#27-remove-element-js)
