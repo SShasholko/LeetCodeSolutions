@@ -21,6 +21,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - [75. Sort Colors (JS)](#75-sort-colors-js)
 - [88. Merge Sorted Array (JS)](#88-merge-sorted-array-js)
 - [136. Single Number (JS)](#136-single-number-js)
+- ![#FFA500](https://placehold.co/15x15/FFA500/FFA500.png) [151. Reverse Words in a String (JS)](#151-reverse-words-in-a-string-js)
 - [169. Majority Element (JS)](#169-majority-element-js)
 - [228. Summary Ranges (JS)](#228-summary-ranges-js)
 - [231. Power of Two (JS)](#231-power-of-two-js)
@@ -177,6 +178,23 @@ var singleNumber = function(nums) {
         return numsNew[i]
       }
     }  
+};
+```
+
+### 151. Reverse Words in a String (JS)
+Difficulty: Medium
+```bash
+var reverseWords = function(s) {
+        s = s.trim()
+    const sArray = s.split(' ')
+    const newArray = []
+    for(let i=sArray.length-1;i>=0;i--){
+      if(sArray[i]!=''){
+        newArray.push(sArray[i])
+      }
+    }
+    const str = newArray.join(' ')
+    return str
 };
 ```
 
