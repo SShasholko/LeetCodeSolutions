@@ -20,6 +20,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [58. Length of Last Word (JS)](#58-length-of-last-word-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [66. Plus One (JS)](#66-plus-one-js)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [75. Sort Colors (JS)](#75-sort-colors-js)
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [80. Remove Duplicates from Sorted Array II (JS)](#80-remove-duplicates-from-sorted-array-ii-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [88. Merge Sorted Array (JS)](#88-merge-sorted-array-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [136. Single Number (JS)](#136-single-number-js)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [151. Reverse Words in a String (JS)](#151-reverse-words-in-a-string-js)
@@ -150,6 +151,25 @@ var sortColors = function(nums) {
         }
       }
     }
+};
+```
+
+### 80. Remove Duplicates from Sorted Array II (JS)
+Difficulty: Medium
+```bash
+var removeDuplicates = function(nums) {
+        let k=nums.length
+    for(let i=0;i<nums.length;i++){
+      if(nums[i]==nums[i-1]){
+        if(nums[i+1]==nums[i]){
+          nums.splice(i+1,1)
+          i--
+          k--
+        }
+      }
+      
+    }
+    return k
 };
 ```
 
