@@ -25,6 +25,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [136. Single Number (JS)](#136-single-number-js)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [151. Reverse Words in a String (JS)](#151-reverse-words-in-a-string-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [169. Majority Element (JS)](#169-majority-element-js)
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [189. Rotate Array (JS)](#189-rotate-array-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [228. Summary Ranges (JS)](#228-summary-ranges-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [231. Power of Two (JS)](#231-power-of-two-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [268. Missing Number (JS)](#268-missing-number-js)
@@ -228,6 +229,27 @@ nums.sort((a,b)=>a-b)
 let num = Math.floor(nums.length/2)
 return nums[num]}
     else return nums[0]
+};
+```
+
+### 189. Rotate Array (JS)
+Difficulty: Medium
+```bash
+var rotate = function(nums, k) {
+        let newArr = []
+        if(nums.length==1){
+                return nums
+        } else {
+                if(k>nums.length){
+                    for(let i=1;i<=k;i++){
+                        let num = nums.pop(nums[nums.length-1])
+                        nums.unshift(num)
+                    }
+        } else {
+                newArr = nums.splice(nums.length-k, k)
+                nums.unshift(...newArr) 
+                }
+                }
 };
 ```
 
