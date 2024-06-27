@@ -15,6 +15,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `Hard`
 
 ## Solutions
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [2. Add Two Numbers (JS)](#2-add-two-numbers-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [27. Remove Element (JS)](#27-remove-element-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [35. Search Insert Position (JS)](#35-search-insert-position-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [58. Length of Last Word (JS)](#58-length-of-last-word-js)
@@ -42,6 +43,32 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [2974. Minimum Number Game (JS)](#2974-minimum-number-game-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [3110. Score of a String (JS)](#3110-score-of-a-string-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [3174. Clear Digits (JS)](#3174-clear-digits-js)
+
+
+### 2. Add Two Numbers (JS)
+Difficulty: Medium
+```bash
+var addTwoNumbers = function(l1, l2) {
+        let newList = new ListNode(0);
+        let head = newList;
+        let tenth = 0;
+        while (l1 || l2 || tenth) {
+                let num = (l1?.val || 0) + (l2?.val || 0) + tenth;
+                if(num<=9){
+                        head.next = new ListNode(num)
+                        tenth = 0
+                        }
+                else{
+                        head.next = new ListNode(num%10)
+                        tenth = 1
+                        }
+            head = head.next;
+            l1 = l1?.next;
+            l2 = l2?.next;
+  }
+return newList.next;
+};
+```
 
 
 ### 27. Remove Element (JS)
