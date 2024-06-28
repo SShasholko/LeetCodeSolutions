@@ -20,6 +20,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [35. Search Insert Position (JS)](#35-search-insert-position-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [58. Length of Last Word (JS)](#58-length-of-last-word-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [66. Plus One (JS)](#66-plus-one-js)
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [74. Search a 2D Matrix (JS)](#74-search-a-2d-matrix-js)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [75. Sort Colors (JS)](#75-sort-colors-js)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [80. Remove Duplicates from Sorted Array II (JS)](#80-remove-duplicates-from-sorted-array-ii-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [88. Merge Sorted Array (JS)](#88-merge-sorted-array-js)
@@ -162,6 +163,21 @@ var plusOne = function(digits) {
     return digits
 };
 ```
+
+### 74. Search a 2D Matrix (JS)
+Difficulty: Medium
+```bash
+var searchMatrix = function(matrix, target) {
+    for(let i=0;i<matrix.length;i++){
+      for(let j=matrix[i].length-1;j>=0;j--){
+        if(matrix[i][j]<target) j=0 
+        if(matrix[i][j] == target) return true
+        }
+    }
+    return false
+};
+```
+
 
 ### 75. Sort Colors (JS)
 Difficulty: Medium
