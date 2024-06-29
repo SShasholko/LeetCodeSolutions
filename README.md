@@ -20,6 +20,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [35. Search Insert Position (JS)](#35-search-insert-position-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [58. Length of Last Word (JS)](#58-length-of-last-word-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [66. Plus One (JS)](#66-plus-one-js)
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [73. Set Matrix Zeroes (JS)](#73-set-matrix-zeroes-js)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [74. Search a 2D Matrix (JS)](#74-search-a-2d-matrix-js)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [75. Sort Colors (JS)](#75-sort-colors-js)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [80. Remove Duplicates from Sorted Array II (JS)](#80-remove-duplicates-from-sorted-array-ii-js)
@@ -163,6 +164,36 @@ var plusOne = function(digits) {
     return digits
 };
 ```
+
+### 73. Set Matrix Zeroes (JS)
+Difficulty: Medium
+```bash
+var setZeroes = function(matrix) {
+      for(let i=0;i<matrix.length;i++){
+    for(let j=0;j<matrix[i].length;j++){
+      if(matrix[i][j]==0){
+        for(let m=0;m<matrix.length;m++){
+           for(let n=0;n<matrix[m].length;n++){
+             if(m==i&&matrix[m][n]!=0){
+               matrix[m][n]='*'
+             }
+             if(n==j&&matrix[m][n]!=0){
+               matrix[m][n]='*'
+             }
+           }
+        }
+      }
+    }
+  }
+  for(let i=0;i<matrix.length;i++)
+  {
+    for(let j=0;j<matrix[i].length;j++){
+      if(matrix[i][j]=='*') matrix[i][j]=0
+    }
+  }
+};
+```
+
 
 ### 74. Search a 2D Matrix (JS)
 Difficulty: Medium
