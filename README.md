@@ -27,6 +27,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [88. Merge Sorted Array (JS)](#88-merge-sorted-array-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [136. Single Number (JS)](#136-single-number-js)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [151. Reverse Words in a String (JS)](#151-reverse-words-in-a-string-js)
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [164. Maximum Gap (JS)](#164-maximum-gap-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [169. Majority Element (JS)](#169-majority-element-js)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [189. Rotate Array (JS)](#189-rotate-array-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [228. Summary Ranges (JS)](#228-summary-ranges-js)
@@ -292,6 +293,22 @@ var reverseWords = function(s) {
     }
     const str = newArray.join(' ')
     return str
+};
+```
+
+### 164. Maximum Gap (JS)
+Difficulty: Medium
+```bash
+var maximumGap = function(nums) {
+    let dif = 0
+    if(nums.length<2) return 0
+    else{
+      nums.sort((a,b)=>a-b)
+      for(let i=0;i<nums.length-1;i++){
+        if(nums[i+1]-nums[i]>dif) dif = nums[i+1]-nums[i]
+      }
+    }
+    return dif
 };
 ```
 
