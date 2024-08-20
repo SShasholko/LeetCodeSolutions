@@ -26,6 +26,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [80. Remove Duplicates from Sorted Array II (JS)](#80-remove-duplicates-from-sorted-array-ii-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [88. Merge Sorted Array (JS)](#88-merge-sorted-array-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [136. Single Number (JS)](#136-single-number-js)
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [137. Single Number II (JS)](#137-single-number-ii-js)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [151. Reverse Words in a String (JS)](#151-reverse-words-in-a-string-js)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [164. Maximum Gap (JS)](#164-maximum-gap-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [169. Majority Element (JS)](#169-majority-element-js)
@@ -278,6 +279,23 @@ var singleNumber = function(nums) {
     }  
 };
 ```
+
+### 137. Single Number II (JS)
+Difficulty: Medium
+```bash
+var singleNumber = function(nums) {
+      const numsNew = [...nums.sort()]
+    for(let i=0;i<numsNew.length;i+=3){
+      if(i===numsNew.length-1){
+        return(numsNew[i])
+      } 
+      if(numsNew[i]!=numsNew[i+1]){
+        return(numsNew[i])
+      }
+    }  
+};
+```
+
 
 ### 151. Reverse Words in a String (JS)
 Difficulty: Medium
