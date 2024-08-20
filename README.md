@@ -34,6 +34,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [228. Summary Ranges (JS)](#228-summary-ranges-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [231. Power of Two (JS)](#231-power-of-two-js)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [238. Product of Array Except Self (JS)](#238-product-of-array-except-self-js)
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [260. Single Number III (JS)](#260-single-number-iii-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [268. Missing Number (JS)](#268-missing-number-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [283. Move Zeroes (JS)](#283-move-zeroes-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [342. Power of Four (JS)](#342-power-of-four-js)
@@ -432,6 +433,27 @@ var productExceptSelf = function(nums) {
    return newArr
 };
 ```
+
+### 260. Single Number III (JS)
+Difficulty: Medium
+```bash
+var singleNumber = function(nums) {
+      const numsNew = [...nums.sort()]
+  const twoElements = []
+    for(let i=0;i<numsNew.length;i+=2){
+      if(i===numsNew.length-1){
+        twoElements.push(numsNew[i])
+      } 
+      if(twoElements.length==2)
+      return twoElements
+      if(numsNew[i]!=numsNew[i+1]){
+        twoElements.push(numsNew[i])
+        i--;
+      }
+    } 
+};
+```
+
 
 ### 268. Missing Number (JS)
 Difficulty: Easy
