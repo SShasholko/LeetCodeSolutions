@@ -30,6 +30,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [151. Reverse Words in a String (JS)](#151-reverse-words-in-a-string-js)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [164. Maximum Gap (JS)](#164-maximum-gap-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [169. Majority Element (JS)](#169-majority-element-js)
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [175. Combine Two Tables (MySQL)](#175-combine-two-tables-mysql)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [189. Rotate Array (JS)](#189-rotate-array-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [228. Summary Ranges (JS)](#228-summary-ranges-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [231. Power of Two (JS)](#231-power-of-two-js)
@@ -341,6 +342,14 @@ let num = Math.floor(nums.length/2)
 return nums[num]}
     else return nums[0]
 };
+```
+
+### 175. Combine Two Tables (MySQL)
+Difficulty: Easy
+```bash
+SELECT p.firstName, p.lastName, a.city, a.state
+FROM Person p
+LEFT JOIN Address a ON p.personId = a.personId
 ```
 
 ### 189. Rotate Array (JS)
