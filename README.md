@@ -30,7 +30,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [151. Reverse Words in a String (JS)](#151-reverse-words-in-a-string-js)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [164. Maximum Gap (JS)](#164-maximum-gap-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [169. Majority Element (JS)](#169-majority-element-js)
-- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [175. Combine Two Tables (MySQL)](#175-combine-two-tables-mysql)
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [175. Combine Two Tables (MySQL)](#175-combine-two-tables-sql)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [189. Rotate Array (JS)](#189-rotate-array-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [228. Summary Ranges (JS)](#228-summary-ranges-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [231. Power of Two (JS)](#231-power-of-two-js)
@@ -41,6 +41,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [342. Power of Four (JS)](#342-power-of-four-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [344. Reverse String (JS)](#344-reverse-string-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [367. Valid Perfect Square (JS)](#367-valid-perfect-square-js)
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [584. Find Customer Referee (SQL)](#584-find-customer-referee-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [595. Big Countries (SQL)](#595-big-countries-sql)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [605. Can Place Flowers (JS)](#605-can-place-flowers-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [674. Longest Continuous Increasing Subsequence (JS)](#674-longest-continuous-increasing-subsequence-js)
@@ -345,7 +346,7 @@ return nums[num]}
 };
 ```
 
-### 175. Combine Two Tables (MySQL)
+### 175. Combine Two Tables (SQL)
 Difficulty: Easy
 ```bash
 SELECT p.firstName, p.lastName, a.city, a.state
@@ -540,6 +541,15 @@ Difficulty: Easy
     }
 };
 ```
+
+### 584. Find Customer Referee (SQL)
+Difficulty: Easy
+```bash
+SELECT name
+FROM Customer 
+WHERE referee_id<>2 OR referee_id is null
+```
+
 
 ### 595. Big Countries (SQL)
 Difficulty: Easy
