@@ -41,6 +41,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [342. Power of Four (JS)](#342-power-of-four-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [344. Reverse String (JS)](#344-reverse-string-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [367. Valid Perfect Square (JS)](#367-valid-perfect-square-js)
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [595. Big Countries (SQL)](#595-big-countries-sql)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [605. Can Place Flowers (JS)](#605-can-place-flowers-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [674. Longest Continuous Increasing Subsequence (JS)](#674-longest-continuous-increasing-subsequence-js)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [945. Minimum Increment to Make Array Unique (JS)](#945-minimum-increment-to-make-array-unique-js)
@@ -538,6 +539,14 @@ Difficulty: Easy
         if(i*i===num){ return true }
     }
 };
+```
+
+### 595. Big Countries (SQL)
+Difficulty: Easy
+```bash
+SELECT name, population, area
+FROM World
+WHERE area>=3000000 OR population>=25000000
 ```
 
 ### 605. Can Place Flowers (JS)
