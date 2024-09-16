@@ -45,6 +45,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [584. Find Customer Referee (SQL)](#584-find-customer-referee-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [595. Big Countries (SQL)](#595-big-countries-sql)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [605. Can Place Flowers (JS)](#605-can-place-flowers-js)
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [619. Biggest Single Number (SQL)](#619-biggest-single-number-sql)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [674. Longest Continuous Increasing Subsequence (JS)](#674-longest-continuous-increasing-subsequence-js)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [945. Minimum Increment to Make Array Unique (JS)](#945-minimum-increment-to-make-array-unique-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1002. Find Common Characters (JS)](#1002-find-common-characters-js)
@@ -593,6 +594,19 @@ if(freePots>=n) return true
 else return false
 };
 ```
+
+
+### 619. Biggest Single Number (SQL)
+Difficulty: Easy
+```bash
+select ifnull((
+    select num as num
+    from MyNumbers
+    group by num having count(num)<2 
+    order by num desc
+    limit 1), null) as num
+```
+
 
 ### 674. Longest Continuous Increasing Subsequence (JS)
 Difficulty: Easy
