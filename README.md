@@ -52,6 +52,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1002. Find Common Characters (JS)](#1002-find-common-characters-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1122. Relative Sort Array (JS)](#1122-relative-sort-array-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1154. Day of the Year (JS)](#1154-day-of-the-year-js)
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1757. Recyclable and Low Fat Products (SQL)](#1757-recyclable-and-low-fat-products-sql)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [2974. Minimum Number Game (JS)](#2974-minimum-number-game-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [3110. Score of a String (JS)](#3110-score-of-a-string-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [3174. Clear Digits (JS)](#3174-clear-digits-js)
@@ -721,6 +722,15 @@ var dayOfYear = function(date) {
     return days+1
 };
 ```
+
+### 1757. Recyclable and Low Fat Products (SQL)
+Difficulty: Easy
+```bash
+select product_id
+from Products
+where Products.low_fats = 'Y' and Products.recyclable = 'Y'
+```
+
 
 ### 2974. Minimum Number Game (JS)
 Difficulty: Easy
