@@ -31,6 +31,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [164. Maximum Gap (JS)](#164-maximum-gap-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [169. Majority Element (JS)](#169-majority-element-js)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [175. Combine Two Tables (SQL)](#175-combine-two-tables-sql)
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [182. Duplicate Emails (SQL)](#182-duplicate-emails-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [183. Customers Who Never Order (SQL)](#183-customers-who-never-order-sql)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [189. Rotate Array (JS)](#189-rotate-array-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [228. Summary Ranges (JS)](#228-summary-ranges-js)
@@ -355,6 +356,17 @@ SELECT p.firstName, p.lastName, a.city, a.state
 FROM Person p
 LEFT JOIN Address a ON p.personId = a.personId
 ```
+
+
+### 182. Duplicate Emails (SQL)
+Difficulty: Easy
+```bash
+select email as Email 
+from Person 
+group by email
+having count(email)>1
+```
+
 
 ### 183. Customers Who Never Order (SQL)
 Difficulty: Easy
