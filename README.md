@@ -53,6 +53,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1122. Relative Sort Array (JS)](#1122-relative-sort-array-js)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1148. Article Views I (SQL)](#1148-article-views-i-sql)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1154. Day of the Year (JS)](#1154-day-of-the-year-js)
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1378. Replace Employee ID With The Unique Identifier (SQL)](#1378-replace-employee-id-with-the-unique-identifier-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1683. Invalid Tweets (SQL)](#1683-invalid-tweets-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1757. Recyclable and Low Fat Products (SQL)](#1757-recyclable-and-low-fat-products-sql)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [2974. Minimum Number Game (JS)](#2974-minimum-number-game-js)
@@ -736,6 +737,15 @@ var dayOfYear = function(date) {
     return days+1
 };
 ```
+
+### 1378. Replace Employee ID With The Unique Identifier (SQL)
+Difficulty: Easy
+```bash
+select ifnull(euni.unique_id, null) as unique_id, e.name
+    from Employees e
+    left join EmployeeUNI euni on e.id = euni.id
+```
+
 
 ### 1683. Invalid Tweets (SQL)
 Difficulty: Easy
