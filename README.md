@@ -43,6 +43,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [342. Power of Four (JS)](#342-power-of-four-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [344. Reverse String (JS)](#344-reverse-string-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [367. Valid Perfect Square (JS)](#367-valid-perfect-square-js)
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [577. Employee Bonus (SQL)](#577-employee-bonus-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [584. Find Customer Referee (SQL)](#584-find-customer-referee-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [595. Big Countries (SQL)](#595-big-countries-sql)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [605. Can Place Flowers (JS)](#605-can-place-flowers-js)
@@ -568,6 +569,15 @@ Difficulty: Easy
         if(i*i===num){ return true }
     }
 };
+```
+
+### 577. Employee Bonus (SQL)
+Difficulty: Easy
+```bash
+select e.name, b.bonus
+from Employee e
+left join bonus b on b.empId = e.empId 
+where b.bonus < 1000 or b.bonus is null
 ```
 
 ### 584. Find Customer Referee (SQL)
