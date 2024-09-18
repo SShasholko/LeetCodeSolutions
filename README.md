@@ -34,6 +34,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [182. Duplicate Emails (SQL)](#182-duplicate-emails-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [183. Customers Who Never Order (SQL)](#183-customers-who-never-order-sql)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [189. Rotate Array (JS)](#189-rotate-array-js)
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [197. Rising Temperature (SQL)](#197-rising-temperature-sql)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [228. Summary Ranges (JS)](#228-summary-ranges-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [231. Power of Two (JS)](#231-power-of-two-js)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [238. Product of Array Except Self (JS)](#238-product-of-array-except-self-js)
@@ -403,6 +404,17 @@ var rotate = function(nums, k) {
                 }
 };
 ```
+
+
+### 197. Rising Temperature (SQL)
+Difficulty: Easy
+```bash
+select w2.id as id
+from Weather w1
+join  Weather w2 on date_add(w1.recordDate, interval 1 day)  = w2.recordDate
+where w1.temperature < w2.temperature  
+```
+
 
 ### 228. Summary Ranges (JS)
 Difficulty: Easy
