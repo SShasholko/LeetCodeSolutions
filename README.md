@@ -47,6 +47,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [577. Employee Bonus (SQL)](#577-employee-bonus-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [584. Find Customer Referee (SQL)](#584-find-customer-referee-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [595. Big Countries (SQL)](#595-big-countries-sql)
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [596. Classes More Than 5 Students (SQL)](#596-classes-more-than-5-students-sql)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [605. Can Place Flowers (JS)](#605-can-place-flowers-js)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [610. Triangle Judgement (SQL)](#610-triangle-judgement-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [619. Biggest Single Number (SQL)](#619-biggest-single-number-sql)
@@ -611,6 +612,18 @@ SELECT name, population, area
 FROM World
 WHERE area>=3000000 OR population>=25000000
 ```
+
+
+### 596. Classes More Than 5 Students (SQL)
+Difficulty: Easy
+```bash
+select class
+from Courses 
+group by class
+having count(class)>=5
+```
+
+
 
 ### 605. Can Place Flowers (JS)
 Difficulty: Easy
