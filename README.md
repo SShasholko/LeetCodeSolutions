@@ -48,6 +48,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [584. Find Customer Referee (SQL)](#584-find-customer-referee-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [595. Big Countries (SQL)](#595-big-countries-sql)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [605. Can Place Flowers (JS)](#605-can-place-flowers-js)
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [610. Triangle Judgement (SQL)](#610-triangle-judgement-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [619. Biggest Single Number (SQL)](#619-biggest-single-number-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [620. Not Boring Movies (SQL)](#620-not-boring-movies-sql)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [674. Longest Continuous Increasing Subsequence (JS)](#674-longest-continuous-increasing-subsequence-js)
@@ -634,6 +635,17 @@ for(let i=2;i<=flowerbed.length-3;i++){
 if(freePots>=n) return true
 else return false
 };
+```
+
+### 610. Triangle Judgement (SQL)
+Difficulty: Easy
+```bash
+select x,y,z, 
+ case
+  when x+y>z and x+z>y and y+z>x then 'Yes'
+  else 'No'
+ end as triangle  
+from Triangle;
 ```
 
 
