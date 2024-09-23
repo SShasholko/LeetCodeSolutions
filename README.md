@@ -63,6 +63,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1378. Replace Employee ID With The Unique Identifier (SQL)](#1378-replace-employee-id-with-the-unique-identifier-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1683. Invalid Tweets (SQL)](#1683-invalid-tweets-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1757. Recyclable and Low Fat Products (SQL)](#1757-recyclable-and-low-fat-products-sql)
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [2356. Number of Unique Subjects Taught by Each Teacher (SQL)](#2356-number-of-unique-subjects-taught-by-each-teacher-sql)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [2974. Minimum Number Game (JS)](#2974-minimum-number-game-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [3110. Score of a String (JS)](#3110-score-of-a-string-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [3174. Clear Digits (JS)](#3174-clear-digits-js)
@@ -848,6 +849,15 @@ Difficulty: Easy
 select product_id
 from Products
 where Products.low_fats = 'Y' and Products.recyclable = 'Y'
+```
+
+
+### 2356. Number of Unique Subjects Taught by Each Teacher (SQL)
+Difficulty: Easy
+```bash
+select teacher_id, count(distinct subject_id) as cnt 
+from Teacher 
+group by teacher_id
 ```
 
 
