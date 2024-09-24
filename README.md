@@ -785,20 +785,6 @@ var relativeSortArray = function(arr1, arr2) {
 };
 ```
 
-### 1211. Queries Quality and Percentage (SQL)
-Difficulty: Easy
-```bash
-select 
-    query_name, 
-    round(avg(rating / position),2) as quality,
-    round(
-    ((sum(case when rating<3 then 1 else 0 end))/count(rating))*100
-    ,2) as poor_query_percentage
-from Queries 
-where  query_name is not null
-group by query_name
-```
-
 
 ### 1148. Article Views I (SQL)
 Difficulty: Easy
@@ -822,6 +808,21 @@ var dayOfYear = function(date) {
     let days = (day1-day0)/1000/60/60/24;
     return days+1
 };
+```
+
+
+### 1211. Queries Quality and Percentage (SQL)
+Difficulty: Easy
+```bash
+select 
+    query_name, 
+    round(avg(rating / position),2) as quality,
+    round(
+    ((sum(case when rating<3 then 1 else 0 end))/count(rating))*100
+    ,2) as poor_query_percentage
+from Queries 
+where  query_name is not null
+group by query_name
 ```
 
 
