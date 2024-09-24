@@ -56,6 +56,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [945. Minimum Increment to Make Array Unique (JS)](#945-minimum-increment-to-make-array-unique-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1002. Find Common Characters (JS)](#1002-find-common-characters-js)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1068. Product Sales Analysis I (SQL)](#1068-product-sales-analysis-i-sql)
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1075. Project Employees I (SQL)](#1075-project-employees-i-sql)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1122. Relative Sort Array (JS)](#1122-relative-sort-array-js)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1148. Article Views I (SQL)](#1148-article-views-i-sql)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1154. Day of the Year (JS)](#1154-day-of-the-year-js)
@@ -758,6 +759,17 @@ Difficulty: Easy
 select p.product_name, s.year, s.price 
 from Sales s
 left join Product p on s.product_id = p. product_id
+```
+
+
+### 1075. Project Employees I (SQL)
+Difficulty: Easy
+```bash
+select p.project_id, 
+round(avg(experience_years),2) as  average_years 
+from Project p
+left join Employee e on p.employee_id = e.employee_id
+group by p.project_id 
 ```
 
 
