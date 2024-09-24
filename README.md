@@ -59,6 +59,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1122. Relative Sort Array (JS)](#1122-relative-sort-array-js)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1148. Article Views I (SQL)](#1148-article-views-i-sql)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1154. Day of the Year (JS)](#1154-day-of-the-year-js)
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1211. Queries Quality and Percentage (SQL)](#1211-queries-quality-and-percentage-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1251. Average Selling Price (SQL)](#1251-average-selling-price-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1378. Replace Employee ID With The Unique Identifier (SQL)](#1378-replace-employee-id-with-the-unique-identifier-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1683. Invalid Tweets (SQL)](#1683-invalid-tweets-sql)
@@ -782,6 +783,20 @@ var relativeSortArray = function(arr1, arr2) {
     }
     return newArray
 };
+```
+
+### 1211. Queries Quality and Percentage (SQL)
+Difficulty: Easy
+```bash
+select 
+    query_name, 
+    round(avg(rating / position),2) as quality,
+    round(
+    ((sum(case when rating<3 then 1 else 0 end))/count(rating))*100
+    ,2) as poor_query_percentage
+from Queries 
+where  query_name is not null
+group by query_name
 ```
 
 
