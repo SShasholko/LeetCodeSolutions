@@ -60,6 +60,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1122. Relative Sort Array (JS)](#1122-relative-sort-array-js)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1148. Article Views I (SQL)](#1148-article-views-i-sql)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1154. Day of the Year (JS)](#1154-day-of-the-year-js)
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [1193. Monthly Transactions I (SQL)](#1193-monthly-transactions-i-sql)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1211. Queries Quality and Percentage (SQL)](#1211-queries-quality-and-percentage-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1251. Average Selling Price (SQL)](#1251-average-selling-price-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1378. Replace Employee ID With The Unique Identifier (SQL)](#1378-replace-employee-id-with-the-unique-identifier-sql)
@@ -821,6 +822,25 @@ var dayOfYear = function(date) {
     let days = (day1-day0)/1000/60/60/24;
     return days+1
 };
+```
+
+
+### 1193. Monthly Transactions I (SQL)
+Difficulty: Medium
+```bash
+select  DATE_FORMAT(trans_date , '%Y-%m') as month, country, 
+count(id) as trans_count, 
+sum(case
+    when state='approved' then 1
+    else 0
+     end) as approved_count,
+sum(amount) as trans_total_amount, 
+sum(case
+    when state='approved' then amount 
+    else 0
+     end) as approved_total_amount
+from Transactions 
+group by DATE_FORMAT(trans_date , '%Y-%m'), country 
 ```
 
 
