@@ -58,6 +58,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1068. Product Sales Analysis I (SQL)](#1068-product-sales-analysis-i-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1075. Project Employees I (SQL)](#1075-project-employees-i-sql)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1122. Relative Sort Array (JS)](#1122-relative-sort-array-js)
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1141. User Activity for the Past 30 Days I (SQL)](#1141-user-activity-for-the-past-30-days-i-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1148. Article Views I (SQL)](#1148-article-views-i-sql)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1154. Day of the Year (JS)](#1154-day-of-the-year-js)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [1193. Monthly Transactions I (SQL)](#1193-monthly-transactions-i-sql)
@@ -797,6 +798,23 @@ var relativeSortArray = function(arr1, arr2) {
     }
     return newArray
 };
+```
+
+### 1141. User Activity for the Past 30 Days I (SQL)
+Difficulty: Easy
+```bash
+select activity_date as day, 
+case 
+     when activity_type = 'open_session' or
+        activity_type = 'end_session' or
+        activity_type = 'scroll_down' or
+        activity_type = 'send_message' 
+      then count(distinct user_id)
+      else 0
+      end as active_users
+from Activity 
+where activity_date between '2019-06-28' and '2019-07-27'
+group by activity_date
 ```
 
 
