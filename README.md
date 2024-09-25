@@ -63,6 +63,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1211. Queries Quality and Percentage (SQL)](#1211-queries-quality-and-percentage-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1251. Average Selling Price (SQL)](#1251-average-selling-price-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1378. Replace Employee ID With The Unique Identifier (SQL)](#1378-replace-employee-id-with-the-unique-identifier-sql)
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1633. Percentage of Users Attended a Contest (SQL)](#1633-percentage-of-users-attended-a-contest-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1683. Invalid Tweets (SQL)](#1683-invalid-tweets-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1757. Recyclable and Low Fat Products (SQL)](#1757-recyclable-and-low-fat-products-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [2356. Number of Unique Subjects Taught by Each Teacher (SQL)](#2356-number-of-unique-subjects-taught-by-each-teacher-sql)
@@ -858,6 +859,16 @@ Difficulty: Easy
 select ifnull(euni.unique_id, null) as unique_id, e.name
     from Employees e
     left join EmployeeUNI euni on e.id = euni.id
+```
+
+
+### 1633. Percentage of Users Attended a Contest (SQL)
+Difficulty: Easy
+```bash
+select  r.contest_id, round(count(distinct r.user_id)/count(distinct u.user_id)*100, 2) as percentage 
+from Users u, Register r
+group by r.contest_id 
+order by percentage desc, contest_id asc
 ```
 
 
