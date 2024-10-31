@@ -64,6 +64,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [1193. Monthly Transactions I (SQL)](#1193-monthly-transactions-i-sql)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1211. Queries Quality and Percentage (SQL)](#1211-queries-quality-and-percentage-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1251. Average Selling Price (SQL)](#1251-average-selling-price-sql)
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1280. Students and Examinations (SQL)](#1280-students-and-examinations-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1378. Replace Employee ID With The Unique Identifier (SQL)](#1378-replace-employee-id-with-the-unique-identifier-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1633. Percentage of Users Attended a Contest (SQL)](#1633-percentage-of-users-attended-a-contest-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1683. Invalid Tweets (SQL)](#1683-invalid-tweets-sql)
@@ -888,6 +889,18 @@ left join UnitsSold u
     on p.product_id = u.product_id
     and u.purchase_date between p.start_date and p.end_date
 group by p.product_id
+```
+
+
+### 1280. Students and Examinations (SQL)
+Difficulty: Easy
+```bash
+select s.student_id, s.student_name, sub.subject_name, COUNT(e.student_id) AS attended_exams
+from Students s
+cross join Subjects sub
+left join Examinations e ON s.student_id = e.student_id AND sub.subject_name = e.subject_name
+group by s.student_id, s.student_name, sub.subject_name
+order by s.student_id, sub.subject_name;
 ```
 
 
