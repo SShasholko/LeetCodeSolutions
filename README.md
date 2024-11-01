@@ -44,6 +44,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [342. Power of Four (JS)](#342-power-of-four-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [344. Reverse String (JS)](#344-reverse-string-js)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [367. Valid Perfect Square (JS)](#367-valid-perfect-square-js)
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [570. Managers with at Least 5 Direct Reports (SQL)](#570-managers-with-at-least-5-direct-reports-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [577. Employee Bonus (SQL)](#577-employee-bonus-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [584. Find Customer Referee (SQL)](#584-find-customer-referee-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [595. Big Countries (SQL)](#595-big-countries-sql)
@@ -593,6 +594,18 @@ Difficulty: Easy
     }
 };
 ```
+
+
+### 570. Managers with at Least 5 Direct Reports (SQL)
+Difficulty: Medium
+```bash
+select e1.name
+from Employee e1
+join Employee e2 on e1.Id = e2.managerId
+group by e2.managerId
+having count(e2.managerId)>4
+```
+
 
 ### 577. Employee Bonus (SQL)
 Difficulty: Easy
