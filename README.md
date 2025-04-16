@@ -24,7 +24,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [74. Search a 2D Matrix (JS)](#74-search-a-2d-matrix-js)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [75. Sort Colors (JS)](#75-sort-colors-js)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [80. Remove Duplicates from Sorted Array II (JS)](#80-remove-duplicates-from-sorted-array-ii-js)
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [88. Merge Sorted Array (JS)](#88-merge-sorted-array-js)
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [88. Merge Sorted Array (JS, Python)](#88-merge-sorted-array-js-python)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [122. Best Time to Buy and Sell Stock II (Python)](#122-best-time-to-buy-and-sell-stock-ii-python)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [136. Single Number (JS)](#136-single-number-js)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [137. Single Number II (JS)](#137-single-number-ii-js)
@@ -278,7 +278,7 @@ var removeDuplicates = function(nums) {
 };
 ```
 
-### 88. Merge Sorted Array (JS)
+### 88. Merge Sorted Array (JS, Python)
 Difficulty: Easy
 ```bash
 var merge = function(nums1, m, nums2, n) {
@@ -289,6 +289,16 @@ var merge = function(nums1, m, nums2, n) {
     }
     nums1.sort((a,b)=>a-b)
 };
+```
+
+```bash
+class Solution:
+    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+        del nums1[m:len(nums1)]
+        del nums2[n:len(nums2)]
+        for i in nums2:
+            nums1.append(i)
+        nums1.sort()
 ```
 
 ### 122. Best Time to Buy and Sell Stock II (Python)
