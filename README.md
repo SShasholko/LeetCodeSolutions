@@ -15,54 +15,54 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `Hard`
 
 ## Solutions
-- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [2. Add Two Numbers (JS)](#2-add-two-numbers-js)
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [27. Remove Element (JS)](#27-remove-element-js)
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [35. Search Insert Position (JS)](#35-search-insert-position-js)
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [58. Length of Last Word (JS)](#58-length-of-last-word-js)
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [66. Plus One (JS)](#66-plus-one-js)
-- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [73. Set Matrix Zeroes (JS)](#73-set-matrix-zeroes-js)
-- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [74. Search a 2D Matrix (JS)](#74-search-a-2d-matrix-js)
-- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [75. Sort Colors (JS)](#75-sort-colors-js)
-- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [80. Remove Duplicates from Sorted Array II (JS)](#80-remove-duplicates-from-sorted-array-ii-js)
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [88. Merge Sorted Array (JS, Python)](#88-merge-sorted-array-js-python)
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [2. Add Two Numbers (JS)](#2-add-two-numbers-js)🍋
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [27. Remove Element (JS, Python)](#27-remove-element-js-python)🍋🐍
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [35. Search Insert Position (JS)](#35-search-insert-position-js)🍋
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [58. Length of Last Word (JS)](#58-length-of-last-word-js)🍋
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [66. Plus One (JS)](#66-plus-one-js)🍋
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [73. Set Matrix Zeroes (JS)](#73-set-matrix-zeroes-js)🍋
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [74. Search a 2D Matrix (JS)](#74-search-a-2d-matrix-js)🍋
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [75. Sort Colors (JS)](#75-sort-colors-js)🍋
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [80. Remove Duplicates from Sorted Array II (JS)](#80-remove-duplicates-from-sorted-array-ii-js)🍋
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [88. Merge Sorted Array (JS, Python)](#88-merge-sorted-array-js-python)🍋🐍
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [122. Best Time to Buy and Sell Stock II (Python)](#122-best-time-to-buy-and-sell-stock-ii-python)
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [136. Single Number (JS)](#136-single-number-js)
-- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [137. Single Number II (JS)](#137-single-number-ii-js)
-- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [151. Reverse Words in a String (JS)](#151-reverse-words-in-a-string-js)
-- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [164. Maximum Gap (JS)](#164-maximum-gap-js)
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [169. Majority Element (JS)](#169-majority-element-js)
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [136. Single Number (JS)](#136-single-number-js)🍋
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [137. Single Number II (JS)](#137-single-number-ii-js)🍋
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [151. Reverse Words in a String (JS)](#151-reverse-words-in-a-string-js)🍋
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [164. Maximum Gap (JS)](#164-maximum-gap-js)🍋
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [169. Majority Element (JS)](#169-majority-element-js)🍋
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [175. Combine Two Tables (SQL)](#175-combine-two-tables-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [182. Duplicate Emails (SQL)](#182-duplicate-emails-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [183. Customers Who Never Order (SQL)](#183-customers-who-never-order-sql)
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [189. Rotate Array (JS)](#189-rotate-array-js)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [197. Rising Temperature (SQL)](#197-rising-temperature-sql)
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [228. Summary Ranges (JS)](#228-summary-ranges-js)
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [231. Power of Two (JS)](#231-power-of-two-js)
-- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [238. Product of Array Except Self (JS)](#238-product-of-array-except-self-js)
-- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [260. Single Number III (JS)](#260-single-number-iii-js)
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [268. Missing Number (JS)](#268-missing-number-js)
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [283. Move Zeroes (JS)](#283-move-zeroes-js)
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [342. Power of Four (JS)](#342-power-of-four-js)
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [344. Reverse String (JS)](#344-reverse-string-js)
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [367. Valid Perfect Square (JS)](#367-valid-perfect-square-js)
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [228. Summary Ranges (JS)](#228-summary-ranges-js)🍋
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [231. Power of Two (JS)](#231-power-of-two-js)🍋
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [238. Product of Array Except Self (JS)](#238-product-of-array-except-self-js)🍋
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [260. Single Number III (JS)](#260-single-number-iii-js)🍋
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [268. Missing Number (JS)](#268-missing-number-js)🍋
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [283. Move Zeroes (JS)](#283-move-zeroes-js)🍋
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [342. Power of Four (JS)](#342-power-of-four-js)🍋
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [344. Reverse String (JS)](#344-reverse-string-js)🍋
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [367. Valid Perfect Square (JS)](#367-valid-perfect-square-js)🍋
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [570. Managers with at Least 5 Direct Reports (SQL)](#570-managers-with-at-least-5-direct-reports-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [577. Employee Bonus (SQL)](#577-employee-bonus-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [584. Find Customer Referee (SQL)](#584-find-customer-referee-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [595. Big Countries (SQL)](#595-big-countries-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [596. Classes More Than 5 Students (SQL)](#596-classes-more-than-5-students-sql)
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [605. Can Place Flowers (JS)](#605-can-place-flowers-js)
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [605. Can Place Flowers (JS)](#605-can-place-flowers-js)🍋
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [610. Triangle Judgement (SQL)](#610-triangle-judgement-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [619. Biggest Single Number (SQL)](#619-biggest-single-number-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [620. Not Boring Movies (SQL)](#620-not-boring-movies-sql)
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [674. Longest Continuous Increasing Subsequence (JS)](#674-longest-continuous-increasing-subsequence-js)
-- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [945. Minimum Increment to Make Array Unique (JS)](#945-minimum-increment-to-make-array-unique-js)
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1002. Find Common Characters (JS)](#1002-find-common-characters-js)
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [674. Longest Continuous Increasing Subsequence (JS)](#674-longest-continuous-increasing-subsequence-js)🍋
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [945. Minimum Increment to Make Array Unique (JS)](#945-minimum-increment-to-make-array-unique-js)🍋
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1002. Find Common Characters (JS)](#1002-find-common-characters-js)🍋
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1068. Product Sales Analysis I (SQL)](#1068-product-sales-analysis-i-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1075. Project Employees I (SQL)](#1075-project-employees-i-sql)
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1122. Relative Sort Array (JS)](#1122-relative-sort-array-js)
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1122. Relative Sort Array (JS)](#1122-relative-sort-array-js)🍋
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1141. User Activity for the Past 30 Days I (SQL)](#1141-user-activity-for-the-past-30-days-i-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1148. Article Views I (SQL)](#1148-article-views-i-sql)
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1154. Day of the Year (JS)](#1154-day-of-the-year-js)
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1154. Day of the Year (JS)](#1154-day-of-the-year-js)🍋
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [1193. Monthly Transactions I (SQL)](#1193-monthly-transactions-i-sql)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [1211. Queries Quality and Percentage (SQL)](#1211-queries-quality-and-percentage-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1251. Average Selling Price (SQL)](#1251-average-selling-price-sql)
@@ -72,9 +72,9 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1683. Invalid Tweets (SQL)](#1683-invalid-tweets-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [1757. Recyclable and Low Fat Products (SQL)](#1757-recyclable-and-low-fat-products-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [2356. Number of Unique Subjects Taught by Each Teacher (SQL)](#2356-number-of-unique-subjects-taught-by-each-teacher-sql)
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [2974. Minimum Number Game (JS)](#2974-minimum-number-game-js)
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [3110. Score of a String (JS)](#3110-score-of-a-string-js)
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [3174. Clear Digits (JS)](#3174-clear-digits-js)
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [2974. Minimum Number Game (JS)](#2974-minimum-number-game-js)🍋
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [3110. Score of a String (JS)](#3110-score-of-a-string-js)🍋
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [3174. Clear Digits (JS)](#3174-clear-digits-js)🍋
 
 
 ### 2. Add Two Numbers (JS)
@@ -103,7 +103,7 @@ return newList.next;
 ```
 
 
-### 27. Remove Element (JS)
+### 27. Remove Element (JS, Python)
 Difficulty: Easy
 ```bash
 var removeElement = function(nums, val) {
@@ -116,6 +116,19 @@ var removeElement = function(nums, val) {
    return nums.length
 };
 ```
+```bash
+class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        i=0
+        while(i<len(nums)):
+            if nums[i]==val:
+                nums.remove(val)
+            else:
+                i+=1
+        print(len(nums))
+```
+
+
 
 ### 35. Search Insert Position (JS)
 Difficulty: Easy
