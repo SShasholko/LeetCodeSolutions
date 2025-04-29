@@ -16,6 +16,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 
 ## Solutions
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [2. Add Two Numbers (JS)](#2-add-two-numbers-js)🍋
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [26. Remove Duplicates from Sorted Array (Python)](#26-remove-duplicates-from-sorted-array-python)🐍
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [27. Remove Element (JS, Python)](#27-remove-element-js-python)🍋🐍
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [35. Search Insert Position (JS)](#35-search-insert-position-js)🍋
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [58. Length of Last Word (JS)](#58-length-of-last-word-js)🍋
@@ -102,6 +103,19 @@ return newList.next;
 };
 ```
 
+### 26. Remove Duplicates from Sorted Array (Python)
+Difficulty: Easy
+```bash
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        i=0
+        while i<len(nums):
+            if nums.index(nums[i])!=i:
+                nums.pop(nums[i])
+            else:
+                i+=1
+        print(len(nums))
+```
 
 ### 27. Remove Element (JS, Python)
 Difficulty: Easy
