@@ -24,7 +24,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [73. Set Matrix Zeroes (JS)](#73-set-matrix-zeroes-js)🍋
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [74. Search a 2D Matrix (JS)](#74-search-a-2d-matrix-js)🍋
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [75. Sort Colors (JS)](#75-sort-colors-js)🍋
-- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [80. Remove Duplicates from Sorted Array II (JS)](#80-remove-duplicates-from-sorted-array-ii-js)🍋
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [80. Remove Duplicates from Sorted Array II (Python, JS) ](#80-remove-duplicates-from-sorted-array-ii-python-js)🐍🍋
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [88. Merge Sorted Array (JS, Python)](#88-merge-sorted-array-js-python)🍋🐍
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [122. Best Time to Buy and Sell Stock II (Python)](#122-best-time-to-buy-and-sell-stock-ii-python)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [136. Single Number (JS)](#136-single-number-js)🍋
@@ -286,8 +286,20 @@ var sortColors = function(nums) {
 };
 ```
 
-### 80. Remove Duplicates from Sorted Array II (JS)
+### 80. Remove Duplicates from Sorted Array II (Python, JS) 
 Difficulty: Medium
+```bash
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        i=0
+        while i<len(nums):
+            if nums.count(nums[i])>2:
+                nums.remove(nums[i])
+            else:
+                i+=1
+        print(len(nums))
+```
+
 ```bash
 var removeDuplicates = function(nums) {
         let k=nums.length
