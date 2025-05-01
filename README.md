@@ -24,14 +24,14 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [73. Set Matrix Zeroes (JS)](#73-set-matrix-zeroes-js)🍋
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [74. Search a 2D Matrix (JS)](#74-search-a-2d-matrix-js)🍋
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [75. Sort Colors (JS)](#75-sort-colors-js)🍋
-- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [80. Remove Duplicates from Sorted Array II (Python, JS) ](#80-remove-duplicates-from-sorted-array-ii-python-js)🐍🍋
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [88. Merge Sorted Array (JS, Python)](#88-merge-sorted-array-js-python)🍋🐍
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [80. Remove Duplicates from Sorted Array II (Python, JS) ](#80-remove-duplicates-from-sorted-array-ii-python-js) 🐍🍋
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [88. Merge Sorted Array (JS, Python)](#88-merge-sorted-array-js-python) 🐍🍋
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [122. Best Time to Buy and Sell Stock II (Python)](#122-best-time-to-buy-and-sell-stock-ii-python)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [136. Single Number (JS)](#136-single-number-js)🍋
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [137. Single Number II (JS)](#137-single-number-ii-js)🍋
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [151. Reverse Words in a String (JS)](#151-reverse-words-in-a-string-js)🍋
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [164. Maximum Gap (JS)](#164-maximum-gap-js)🍋
-- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [169. Majority Element (JS)](#169-majority-element-js)🍋
+- ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [169. Majority Element (Python, JS)](#169-majority-element-python-js) 🐍🍋
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [175. Combine Two Tables (SQL)](#175-combine-two-tables-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [182. Duplicate Emails (SQL)](#182-duplicate-emails-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [183. Customers Who Never Order (SQL)](#183-customers-who-never-order-sql)
@@ -418,7 +418,7 @@ var maximumGap = function(nums) {
 };
 ```
 
-### 169. Majority Element (JS)
+### 169. Majority Element (Python, JS)
 Difficulty: Easy
 ```bash
 var majorityElement = function(nums) {
@@ -428,6 +428,18 @@ let num = Math.floor(nums.length/2)
 return nums[num]}
     else return nums[0]
 };
+```
+
+```bash
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        i=0
+        nums.sort()
+        while i<len(nums):
+            if nums.count(nums[i])>len(nums)//2:
+                return nums[i]
+            else:
+                i+=nums.count(nums[i])
 ```
 
 ### 175. Combine Two Tables (SQL)
