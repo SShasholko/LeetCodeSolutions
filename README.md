@@ -35,7 +35,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [175. Combine Two Tables (SQL)](#175-combine-two-tables-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [182. Duplicate Emails (SQL)](#182-duplicate-emails-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [183. Customers Who Never Order (SQL)](#183-customers-who-never-order-sql)
-- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [189. Rotate Array (JS)](#189-rotate-array-js)
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [189. Rotate Array (Python, JS)](#189-rotate-array-python-js) 🐍🍋
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [197. Rising Temperature (SQL)](#197-rising-temperature-sql)
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [228. Summary Ranges (JS)](#228-summary-ranges-js)🍋
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [231. Power of Two (JS)](#231-power-of-two-js)🍋
@@ -470,8 +470,18 @@ left join Orders o on c.id=o.customerId
 where o.customerId is null
 ```
 
-### 189. Rotate Array (JS)
+### 189. Rotate Array (Python, JS)
 Difficulty: Medium
+```bash
+class Solution:
+    def rotate(self, nums: List[int], k: int) -> None:
+        while(k>0):
+            num = nums[len(nums)-1]
+            nums.insert(0,num)
+            nums.pop()
+            k-=1
+```
+
 ```bash
 var rotate = function(nums, k) {
         let newArr = []
