@@ -18,6 +18,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [2. Add Two Numbers (JS)](#2-add-two-numbers-js)🍋
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [26. Remove Duplicates from Sorted Array (Python)](#26-remove-duplicates-from-sorted-array-python)🐍
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [27. Remove Element (JS, Python)](#27-remove-element-js-python)🍋🐍
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [28. Find the Index of the First Occurrence in a Stringt (Python)](#28-find-the-index-of-the-first-occurrence-in-a-stringt-python) 🐍
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [35. Search Insert Position (JS)](#35-search-insert-position-js)🍋
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [58. Length of Last Word (JS)](#58-length-of-last-word-js)🍋
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [66. Plus One (JS)](#66-plus-one-js)🍋
@@ -142,6 +143,16 @@ class Solution:
         print(len(nums))
 ```
 
+### 28. Find the Index of the First Occurrence in a Stringt (Python)
+Difficulty: Easy
+```bash
+class Solution:
+    def strStr(self, haystack: str, needle: str) -> int:
+        try:
+            return haystack.index(needle)
+        except ValueError as ve:
+            return -1
+```
 
 
 ### 35. Search Insert Position (JS)
