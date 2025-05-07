@@ -27,7 +27,8 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [75. Sort Colors (JS)](#75-sort-colors-js)🍋
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [80. Remove Duplicates from Sorted Array II (Python, JS) ](#80-remove-duplicates-from-sorted-array-ii-python-js) 🐍🍋
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [88. Merge Sorted Array (JS, Python)](#88-merge-sorted-array-js-python) 🐍🍋
-- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [122. Best Time to Buy and Sell Stock II (Python)](#122-best-time-to-buy-and-sell-stock-ii-python)
+- ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [122. Best Time to Buy and Sell Stock II (Python)](#122-best-time-to-buy-and-sell-stock-ii-python) 🐍
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [125. Valid Palindrome (Python)](#125-valid-palindrome-python) 🐍
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [136. Single Number (JS)](#136-single-number-js)🍋
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [137. Single Number II (JS)](#137-single-number-ii-js)🍋
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [151. Reverse Words in a String (JS)](#151-reverse-words-in-a-string-js)🍋
@@ -361,6 +362,21 @@ class Solution:
             if prices[i] > prices[i - 1]:
                 max_profit += prices[i] - prices[i - 1]
         return max_profit
+```
+
+### 125. Valid Palindrome (Python)
+Difficulty: Easy
+```bash
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        clean_text = ''.join(char for char in s.lower() if char.isalnum())
+        i=0
+        while i<len(clean_text)//2:
+            if clean_text[i]!=clean_text[-i-1]:
+                return False
+                break
+            i+=1
+        return True
 ```
 
 ### 136. Single Number (JS)
