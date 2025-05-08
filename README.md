@@ -16,6 +16,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 
 ## Solutions
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [2. Add Two Numbers (JS)](#2-add-two-numbers-js)🍋
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [13. Roman to Integer (Python)](#13-roman-to-integer-python) 🐍
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [26. Remove Duplicates from Sorted Array (Python)](#26-remove-duplicates-from-sorted-array-python)🐍
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [27. Remove Element (JS, Python)](#27-remove-element-js-python)🍋🐍
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [28. Find the Index of the First Occurrence in a Stringt (Python)](#28-find-the-index-of-the-first-occurrence-in-a-stringt-python) 🐍
@@ -104,6 +105,85 @@ var addTwoNumbers = function(l1, l2) {
 return newList.next;
 };
 ```
+
+### 13. Roman to Integer (Python)
+Difficulty: Easy
+```bash
+class Solution:
+    def romanToInt(self, s: str) -> int:
+        sum = 0
+        i=0
+        while i<len(s)-1:
+            if s[i]=='M':
+                sum+=1000
+                i+=1
+                continue
+            if s[i]=='C' and s[i+1]=='M':
+                sum+=900
+                i+=2
+                continue
+            if s[i]=='D':
+                sum+=500
+                i+=1
+                continue
+            if s[i]=='C' and s[i+1]=='D':
+                sum+=400
+                i+=2
+                continue
+            if s[i]=='C':
+                sum+=100
+                i+=1
+                continue
+            if s[i]=='X' and s[i+1]=='C':
+                sum+=90
+                i+=2
+                continue
+            if s[i]=='L':
+                sum+=50
+                i+=1
+                continue
+            if s[i]=='X' and s[i+1]=='L':
+                sum+=40
+                i+=2
+                continue
+            if s[i]=='X':
+                sum+=10
+                i+=1
+                continue
+            if s[i]=='I' and s[i+1]=='X':
+                sum+=9
+                i+=2
+                continue
+            if s[i]=='V':
+                sum+=5
+                i+=1
+                continue
+            if s[i]=='I' and s[i+1]=='V':
+                sum+=4
+                i+=2
+                continue
+            if s[i]=='I':
+                sum+=1
+                i+=1
+                continue
+        if i<len(s):
+            if s[i]=='M':
+                sum+=1000
+            if s[i]=='D':
+                sum+=500
+            if s[i]=='C':
+                sum+=100
+            if s[i]=='L':
+                sum+=50
+            if s[i]=='X':
+                sum+=10
+            if s[i]=='V':
+                sum+=5
+            if s[i]=='I':
+                sum+=1
+        return sum
+```
+
 
 ### 26. Remove Duplicates from Sorted Array (Python)
 Difficulty: Easy
