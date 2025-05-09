@@ -49,6 +49,7 @@ Welcome to my repository of solutions for LeetCode problems! Below you'll find a
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [342. Power of Four (JS)](#342-power-of-four-js)🍋
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [344. Reverse String (JS)](#344-reverse-string-js)🍋
 - ![#c5f015](https://placehold.co/10x10/c5f015/c5f015.png) [367. Valid Perfect Square (JS)](#367-valid-perfect-square-js)🍋
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [383. Ransom Note (Python)](#383-ransom-note-python) 🐍
 - ![#FFA500](https://placehold.co/10x10/FFA500/FFA500.png) [570. Managers with at Least 5 Direct Reports (SQL)](#570-managers-with-at-least-5-direct-reports-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [577. Employee Bonus (SQL)](#577-employee-bonus-sql)
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) [584. Find Customer Referee (SQL)](#584-find-customer-referee-sql)
@@ -784,6 +785,21 @@ Difficulty: Easy
         if(i*i===num){ return true }
     }
 };
+```
+
+### 383. Ransom Note (Python)
+Difficulty: Easy
+```bash
+class Solution:
+    def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+        i=0
+        while i<len(ransomNote):
+            if  magazine.count(ransomNote[i]) > 0 and magazine.count(ransomNote[i]) >= ransomNote.count(ransomNote[i]):
+                magazine = magazine.replace(ransomNote[i], '')
+                ransomNote = ransomNote.replace(ransomNote[i], '')
+            else:
+                return False
+        return True
 ```
 
 
